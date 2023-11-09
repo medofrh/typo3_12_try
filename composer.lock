@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7315fd7b284f56d5861afec7a26a568",
+    "content-hash": "f31d1cc0913a8c67863282854f898ce3",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -910,6 +910,37 @@
                 "source": "https://github.com/firebase/php-jwt/tree/v6.9.0"
             },
             "time": "2023-10-05T00:24:42+00:00"
+        },
+        {
+            "name": "fixpunkt/ext20",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/ext12",
+                "reference": "76ccdc6204ee6b6b8b702a03e3ee4becbbf386ff"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5 || ^12.0",
+                "typo3/cms-fluid-styled-content": "^11.5 || ^12.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "ext12"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MyVendor\\MyExtension\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "An example extension",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -6973,7 +7004,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fixpunkt/ext20": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
