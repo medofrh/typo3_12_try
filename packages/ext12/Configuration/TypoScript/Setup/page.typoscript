@@ -1,9 +1,26 @@
 page = PAGE
 
-page.10 = FLUIDTEMPLATE
+page {
 
-page.10 {
-    layoutRootPath = EXT:ext12/Resources/Private/Layouts/
-    
-    file = EXT:ext12/Resources/Private/Templates/Default.html
+    meta {
+        viewport = width=device-width, initial-scale=1.0
+    }
+    shortcutIcon = EXT:ext12/Resources/Public/Images/favicon.ico
+
+    10 = FLUIDTEMPLATE
+    10 {
+        layoutRootPath = EXT:ext12/Resources/Private/Layouts/
+
+        file = EXT:ext12/Resources/Private/Templates/Default.html
+    }
+
+    includeCSS {
+        bootstrap = EXT:ext12/Resources/Public/Css/bootstrap.min.css
+        style = EXT:ext12/Resources/Public/Css/style.css
+    }
+
+    includeJSFooter {
+        jquery = EXT:ext12/Resources/Public/Js/jquery.min.js
+        bootstrap = EXT:ext12/Resources/Public/Js/bootstrap.min.js
+    }
 }
