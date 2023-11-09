@@ -1,0 +1,12 @@
+base: 'http://typo3-blog.localhost/'
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: us
+rootPageId: 2
+websiteTitle: ''

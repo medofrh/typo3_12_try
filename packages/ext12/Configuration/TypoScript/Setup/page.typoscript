@@ -1,0 +1,9 @@
+page = PAGE
+
+page.10 = FLUIDTEMPLATE
+
+page.10 {
+    layoutRootPath = EXT:ext12/Resources/Private/Layouts/
+    
+    file = EXT:ext12/Resources/Private/Templates/Default.html
+}
