@@ -118,6 +118,7 @@ return [
             'security.usePasswordPolicyForFrontendUsers' => true,
         ],
         'sitename' => 'New TYPO3 site',
+        'systemLocale' => 'en_US.utf8',
         'systemMaintainers' => [
             1,
         ],
