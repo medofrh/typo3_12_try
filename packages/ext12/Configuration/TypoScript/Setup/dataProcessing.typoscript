@@ -1,0 +1,10 @@
+page.10.dataProcessing {
+    # Main menu
+    10 = menu
+    10 {
+        as = MainMenu
+        expandAll = 1
+        levels = 2
+        titleField = subtitle // nav_title // title
+    }
+}

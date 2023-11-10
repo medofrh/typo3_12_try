@@ -22,6 +22,7 @@ page.includeJSFooter {
 page.10 = FLUIDTEMPLATE
 page.10 {
     layoutRootPath = EXT:ext12/Resources/Private/Layouts/
+    partialRootPath = EXT:ext12/Resources/Private/Partials/
 
     #file = EXT:ext12/Resources/Private/Templates/Default.html
     file.stdWrap.cObject = CASE
