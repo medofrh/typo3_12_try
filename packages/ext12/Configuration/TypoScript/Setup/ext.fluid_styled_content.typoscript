@@ -1,0 +1,3 @@
+lib.contentElement {
+    partialRootPaths.100 = EXT:ext12/Resources/Private/Extensions/fluid_styled_content/Partials/
+}

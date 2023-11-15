@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => false,
+        'debug' => true,
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$YkZSSHRXSjZZRURxRExqeQ$ZirFNucgoCRhdQ06JK2CQbZTCWsFVeIYm4PX+7cOMvE',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -38,13 +38,45 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'imageoptimizer' => [
+            'gifBinary' => 'gifsicle',
+            'gifCheck' => 'gif',
+            'gifOnProcessing' => '0',
+            'gifOnUpload' => '0',
+            'gifParametersOnProcessing' => '--batch -O2 %s',
+            'gifParametersOnUpload' => '--batch -O2 %s',
+            'jpgBinary' => 'jpegoptim',
+            'jpgCheck' => 'jpg',
+            'jpgOnProcessing' => '0',
+            'jpgOnUpload' => '0',
+            'jpgParametersOnProcessing' => '--strip-all %s',
+            'jpgParametersOnUpload' => '--strip-all %s',
+            'pngBinary' => 'optipng',
+            'pngCheck' => 'png',
+            'pngOnProcessing' => '0',
+            'pngOnUpload' => '0',
+            'pngParametersOnProcessing' => '-o2 %s',
+            'pngParametersOnUpload' => '-o2 %s',
+            'svgBinary' => 'svgo',
+            'svgCheck' => 'svg',
+            'svgOnUpload' => '0',
+            'svgParametersOnUpload' => '--pretty %s',
+        ],
     ],
     'FE' => [
-        'debug' => false,
+        'debug' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
         ],
+    ],
+    'GFX' => [
+        'processor' => 'ImageMagick',
+        'processor_allowTemporaryMasksAsPng' => '',
+        'processor_colorspace' => 'RGB',
+        'processor_effects' => '',
+        'processor_enabled' => '1',
+        'processor_path' => '/usr/bin/',
     ],
     'LOG' => [
         'TYPO3' => [
@@ -53,7 +85,7 @@ return [
                     'writerConfiguration' => [
                         'notice' => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
-                                'disabled' => true,
+                                'disabled' => false,
                             ],
                         ],
                     ],
@@ -95,10 +127,10 @@ return [
                 ],
             ],
         ],
-        'devIPmask' => '',
-        'displayErrors' => 0,
+        'devIPmask' => '*',
+        'displayErrors' => 1,
         'encryptionKey' => '505ce72a9f04e79e23b432a9539fbefe5a5867686ed76358f98796dd6480db0282b4e26fd4d217443ef6cf387d4df3c5',
-        'exceptionalErrors' => 4096,
+        'exceptionalErrors' => 12290,
         'sitename' => 'New TYPO3 Project',
         'systemMaintainers' => [
             1,
