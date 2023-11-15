@@ -33,3 +33,18 @@ img.siteLogo {
     max-width: 10%;
     height: auto;
 }
+
+.rootline a, .rootline a:visited {
+    color: #666;
+    display: inline-block;
+}
+
+.rootline a:after {
+    display: inline-block;
+    content: ">";
+    margin: 0 .5rem;
+}
+
+.rootline a:hover {
+    color: #ff8700;
+}
