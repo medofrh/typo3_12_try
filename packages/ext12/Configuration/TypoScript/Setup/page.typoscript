@@ -19,6 +19,8 @@ page.includeJSFooter {
     scripts = EXT:ext12/Resources/Public/Js/scripts.js
 }
 
+page.bodyTagAdd = class="d-flex flex-column h-100"
+
 page.10 = FLUIDTEMPLATE
 page.10 {
     layoutRootPath = EXT:ext12/Resources/Private/Layouts/
