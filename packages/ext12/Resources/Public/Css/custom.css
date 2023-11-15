@@ -117,3 +117,42 @@ img.siteLogo {
     }
 
 }
+
+.ce-gallery figure.video {
+    display: block;
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.video-embed iframe,
+.video-embed video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.frame-layout-10 .ce-center .ce-inner {
+    position: relative;
+    float: none;
+    right: -50%;
+}
+
+.frame-layout-10 .ce-left .ce-gallery,
+.frame-layout-10 .ce-column {
+    float: none;
+    width: 100%;
+}
+
+.frame-layout-10 .ce-center .ce-outer {
+    position: relative;
+    float: none;
+    right: 50%;
+}

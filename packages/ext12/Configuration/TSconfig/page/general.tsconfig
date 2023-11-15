@@ -1,5 +1,14 @@
 TCEFORM {
     tt_content {
+        layout{
+            types{
+                textmedia{
+                    addItems {
+                        10 = Responsive Video
+                    }
+                }
+            }
+        }
         header_layout {
             altLabels {
                 1 = H1
