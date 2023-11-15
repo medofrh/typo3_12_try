@@ -5,7 +5,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
             <f:link.typolink parameter="{settings.rootUid}" class="navbar-brand">
-                <f:image src="{settings.logoFile}" width="150" alt="{settings.logoAlt}" title="{settings.logoTitle}" />
+                <f:image class="siteLogo" src="{settings.logoFile}" width="150" alt="{settings.logoAlt}" title="{settings.logoTitle}" />
                 <f:comment>##TODO:image sizes</f:comment>
             </f:link.typolink>
             <f:render partial="MainMenu" arguments="{_all}" /> 
@@ -22,21 +22,5 @@
 
 </main>
 <!-- Footer-->
-<footer class="bg-dark py-4 mt-auto">
-    <div class="container px-5">
-        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-            <div class="col-auto">
-                <div class="small m-0 text-white">Copyright &copy; Your Website 2023</div>
-            </div>
-            <div class="col-auto">
-                <a class="link-light small" href="#!">Privacy</a>
-                <span class="text-white mx-1">&middot;</span>
-                <a class="link-light small" href="#!">Terms</a>
-                <span class="text-white mx-1">&middot;</span>
-                <a class="link-light small" href="#!">Contact</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
+<f:render partial="Footer" arguments="{_all}" />
 </html>

@@ -4,6 +4,10 @@ ext12 {
     logoAlt = Logo
     logoTitle = Logo
     logoHeight = 100
+
+    metaNavPid = 19
+
+    copyrightText = Copyright &copy; Fixpunkt
 }
 
 ## TODO: dynamic Uid

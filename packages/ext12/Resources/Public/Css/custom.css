@@ -20,3 +20,16 @@ ul ul .nav-current {
 ul .nav-active {
     color: #ddd;
 }
+
+a.link-light.small.mx-1.metanav-current {
+    color: #ff8700 !important;
+}
+
+a.link-light.small.mx-1 {
+    text-decoration: none;
+}
+
+img.siteLogo {
+    max-width: 10%;
+    height: auto;
+}
