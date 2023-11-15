@@ -1,5 +1,11 @@
+#customcategory = ext12 = Sitepackage TYPO3 12 LTS
+# customsubcategory = logo = Logo website
+
 ext12 {
+    # cat = ext12/links; type = int+; label = Root page UID: UID of the root page of the website
     rootUid = 2 
+
+    # cat = ext12/logo; type = file; Label = Logo file: Path to the logo file
     logoFile = EXT:ext12/Resources/Public/Images/Logo.png
     logoAlt = Logo
     logoTitle = Logo
