@@ -46,4 +46,11 @@ page.10 {
             select.where = {#colPos} = 1
         }
     }
+
+    settings {
+        rootUid = {$ext12.rootUid}
+        logoFile = {$ext12.logoFile}
+        logoAlt = {$ext12.logoAlt}
+        logoTitle = {$ext12.logoTitle}
+    }
 }

@@ -9,9 +9,9 @@
             <f:if condition="{item.children}">
                 <f:then>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle {f:if(condition: item.active, then: 'nav-active')}" id="navbarDropdown{item.title}" href="{item.title}"
+                        <a class="nav-link dropdown-toggle {f:if(condition: item.active, then: 'nav-active')}" id="navbarDropdown{item.data.uid}" href="{item.title}"
                             role="button" data-bs-toggle="dropdown" aria-expanded="true">{item.title}</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown{item.title}">
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown{item.data.uid}">
                             <f:for each="{item.children}" as="child">
                                 <f:link.typolink parameter="{child.data.uid}" target="{child.target}"
                                     title="{item.title}" class="dropdown-item {f:if(condition: child.current, then: 'nav-current')}">

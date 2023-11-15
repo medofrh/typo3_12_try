@@ -1,8 +1,8 @@
 <?php
 return [
     'BE' => [
-        'debug' => true,
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$UTUxQmVYYmdQRVQ3VFcyNg$0bUK9hi2GJLhGVLaDZKBJ+1989rWMXcDd+5+FqIQv0c',
+        'debug' => false,
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$YkZSSHRXSjZZRURxRExqeQ$ZirFNucgoCRhdQ06JK2CQbZTCWsFVeIYm4PX+7cOMvE',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -14,9 +14,8 @@ return [
                 'charset' => 'utf8mb4',
                 'dbname' => 'typo3-blog',
                 'driver' => 'mysqli',
-                'host' => '127.0.0.1',
+                'host' => 'localhost',
                 'password' => 'M6e3d3o6@',
-                'port' => 3306,
                 'tableoptions' => [
                     'charset' => 'utf8mb4',
                     'collate' => 'utf8mb4_unicode_ci',
@@ -41,23 +40,11 @@ return [
         ],
     ],
     'FE' => [
-        'cacheHash' => [
-            'enforceValidation' => true,
-        ],
-        'debug' => true,
-        'disableNoCacheParameter' => true,
+        'debug' => false,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
         ],
-    ],
-    'GFX' => [
-        'processor' => 'ImageMagick',
-        'processor_allowTemporaryMasksAsPng' => 0,
-        'processor_colorspace' => 'RGB',
-        'processor_effects' => false,
-        'processor_enabled' => '1',
-        'processor_path' => '/usr/bin/',
     ],
     'LOG' => [
         'TYPO3' => [
@@ -66,7 +53,7 @@ return [
                     'writerConfiguration' => [
                         'notice' => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
-                                'disabled' => false,
+                                'disabled' => true,
                             ],
                         ],
                     ],
@@ -83,7 +70,6 @@ return [
         'transport_smtp_username' => '',
     ],
     'SYS' => [
-        'UTF8filesystem' => true,
         'caching' => [
             'cacheConfigurations' => [
                 'hash' => [
@@ -109,18 +95,14 @@ return [
                 ],
             ],
         ],
-        'devIPmask' => '*',
-        'displayErrors' => 1,
-        'encryptionKey' => '30e503e6123b0cf28b4a6b5121379005d50eff11247de60c6888b9ea71e95cfe1e105b3e6c137e1473cb6a4ee889c01d',
-        'exceptionalErrors' => 12290,
-        'features' => [
-            'security.backend.enforceContentSecurityPolicy' => true,
-            'security.usePasswordPolicyForFrontendUsers' => true,
-        ],
-        'sitename' => 'New TYPO3 site',
-        'systemLocale' => 'en_US.utf8',
+        'devIPmask' => '',
+        'displayErrors' => 0,
+        'encryptionKey' => '505ce72a9f04e79e23b432a9539fbefe5a5867686ed76358f98796dd6480db0282b4e26fd4d217443ef6cf387d4df3c5',
+        'exceptionalErrors' => 4096,
+        'sitename' => 'New TYPO3 Project',
         'systemMaintainers' => [
             1,
         ],
+        'trustedHostsPattern' => '.*.*',
     ],
 ];
